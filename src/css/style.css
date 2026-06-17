@@ -442,3 +442,208 @@ main{
     background-color: var(--color-primary);
     color: var(--color-background);
 }
+
+/* RESPONSIVIDADE */
+/* TABLETS */
+
+
+@media (max-width: 1024px){
+
+    header{
+        padding: 20px;
+    }
+
+    header h1{
+        font-size: 36px;
+    }
+
+    nav ul{
+        font-size: 22px;
+        gap: 10px;
+    }
+
+    nav ul li a{
+        margin-right: 20px;
+    }
+
+    #sobre-conteudo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobre-foto{
+        width: 300px;
+    }
+
+    #sobre-textos p{
+        font-size: 22px;
+    }
+
+    .cards-habilidades{
+        padding: 30px;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .slide-img{
+        height: 350px;
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 768px){
+
+    main{
+        padding-top: 180px;
+    }
+
+    header{
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 18px;
+        gap: 12px;
+    }
+
+    nav ul li a{
+        margin-right: 0;
+    }
+
+    #sobre,
+    #projetos,
+    #habilidades,
+    #contato{
+        padding: 25px;
+    }
+
+    #sobre-titulo,
+    #projetos-titulo,
+    #habilidades-titulo,
+    #contato-titulo{
+        font-size: 26px;
+    }
+
+    #sobre-conteudo{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    #sobre-foto{
+        width: 100%;
+        max-width: 280px;
+    }
+
+    #sobre-textos p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #sobre-tags{
+        justify-content: center;
+    }
+
+    #sobre-tags span{
+        font-size: 16px;
+    }
+
+    .slide-img{
+        height: 250px;
+    }
+
+    .slide-info{
+        padding: 15px;
+    }
+
+    .slide-titulo{
+        font-size: 20px;
+    }
+
+    .carrossel-btn{
+        width: 38px;
+        height: 38px;
+        font-size: 20px;
+    }
+
+    .cards-habilidades{
+        padding: 0;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .div-habilidades{
+        width: 140px;
+    }
+
+    .div-habilidades:hover{
+        transform: scale(1.05);
+    }
+
+    .img-habilidades{
+        width: 70px;
+    }
+
+    #paragrafo-contato{
+        font-size: 18px;
+    }
+
+    .informacoes-contato{
+        font-size: 18px;
+    }
+
+    .links-contato{
+        word-break: break-word;
+    }
+}
+
+/* CELULARES PEQUENOS */
+
+@media (max-width: 480px){
+
+    header h1{
+        font-size: 26px;
+    }
+
+    nav ul{
+        font-size: 16px;
+    }
+
+    #sobre-textos p{
+        font-size: 16px;
+    }
+
+    #sobre-tags span{
+        width: 100%;
+        text-align: center;
+    }
+
+    .slide-img{
+        height: 180px;
+    }
+
+    .slide-titulo{
+        font-size: 18px;
+    }
+
+    .div-habilidades{
+        width: 100%;
+    }
+
+    .curriculo{
+        width: 100%;
+        text-align: center;
+    }
+}
