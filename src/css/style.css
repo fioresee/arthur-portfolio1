@@ -496,7 +496,7 @@ main{
 @media (max-width: 768px){
 
     main{
-        padding-top: 220px;
+        padding-top: 200px;
     }
 
     header{
@@ -536,6 +536,7 @@ main{
     #habilidades,
     #contato{
         padding: 25px;
+        scroll-margin-top: 150px;
     }
 
     #sobre-titulo,
