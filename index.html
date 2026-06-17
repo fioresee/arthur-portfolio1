@@ -45,12 +45,51 @@
         </section>
 
         <section id="projetos">
-            <h2>Projetos</h2>
-            <ul>
-                <li><strong>Projeto 1:</strong> Descrição do projeto 1.</li>
-                <li><strong>Projeto 2:</strong> Descrição do projeto 2.</li>
-                <li><strong>Projeto 3:</strong> Descrição do projeto 3.</li>
-            </ul>
+            <h2 id="projetos-titulo">Projetos</h2>
+
+            <div id="carrossel">
+                <div class="carrossel-track">
+
+                    <div class="slide ativo">
+                        <a href="https://lab-404-1espi.github.io/GS-FrontEnd/" target="_blank" class="slide-link">
+                            <img class="slide-img" src="./src/assets/imgs/AstraSyncAI.jpeg" alt="AstraSync AI">
+                            <div class="slide-info">
+                                <h3 class="slide-titulo">AstraSync AI</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+                        <a href="https://lab-404-1espi.github.io/CP2-FRONTEND/" target="_blank" class="slide-link">
+                            <img class="slide-img" src="./src/assets/imgs/RestauranteKyoto.jpeg" alt="Restaurante Kyoto">
+                            <div class="slide-info">
+                                <h3 class="slide-titulo">Restaurante Kyoto</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="slide">
+                        <a href="https://fioresee.github.io/Site-LOJA-CITY/" target="_blank" class="slide-link">
+                            <img class="slide-img" src="./src/assets/imgs/LOJACITY.jpeg" alt="Loja City">
+                            <div class="slide-info">
+                                <h3 class="slide-titulo">Loja City</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carrossel-btn" id="btn-anterior">&#8592;</button>
+                <button class="carrossel-btn" id="btn-proximo">&#8594;</button>
+
+                <!-- Indicadores -->
+                <div class="carrossel-dots">
+                    <span class="dot ativo" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
         </section>
 
         <section id="habilidades">
