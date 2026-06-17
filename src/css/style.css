@@ -13,11 +13,24 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
 body{
     font-family: 'Manrope', sans-serif;
     background-color: var(--color-background);
     color: var(--color-primary);
 }
+
+#sobre,
+#projetos,
+#habilidades,
+#contato{
+    scroll-margin-top: 120px;
+}
+
 
 /* HEADER ---------------------------------- */ 
 
