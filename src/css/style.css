@@ -13,18 +13,46 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+}
+
+/* HEADER ---------------------------------- */ 
+
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: var(--color-background-secondary);
+    padding: 20px 40px;
+    background: var(--color-background-secondary);
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+header.rolado{
+    height: 75px;
+    background: rgba(19, 32, 51, 0.7);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(225,183,104,0.15);
+    box-shadow:
+        0 5px 20px rgba(0,0,0,0.2);
 }
 
 header h1{
     color: var(--color-primary);
-    font-size: 30px;
+    font-size: 50px;
+    transition: all 0.4s ease;
+}
 
+header.rolado h1{
+    font-size: 40px;
 }
 
 header h1 a{
@@ -33,33 +61,111 @@ header h1 a{
 }
 
 header h1:hover{
-    color: var(--color-primary);
     text-shadow: 0 0 10px var(--color-primary);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    
 }
 
 nav ul{
     list-style: none;
     display: flex;
     gap: 20px;
+    font-size: 30px;
+    transition: all 0.4s ease;
+}
+
+header.rolado nav ul{
+    font-size: 24px;
 }
 
 nav ul li a{
     color: var(--color-primary);
     text-decoration: none;
-    font-weight: 500;
-    margin-right: 90px;
+    font-weight: 600;
+    margin-right: 60px;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover{
-    color: var(--color-secondary);
-    transition: color 0.3s ease;
+    text-shadow: 0 0 10px var(--color-primary);
 }
 
-body{
-    font-family: 'Manrope', sans-serif;
-    background-color: var(--color-background);
+/* MAIN ----------------------------------- */
+
+main{
+    padding-top: 140px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* SOBRE ---------------------------------- */
+
+#sobre{
+    padding: 50px;
+    border: var(--color-primary) solid 1px;
+    border-radius: 10px;
+    background-color: var(--color-background-secondary);
+}
+
+#sobre-titulo{
     color: var(--color-primary);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#sobre-conteudo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#sobre-foto{
+    width: 300px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+#sobre-textos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre-textos p{
+    color: var(--color-primary);
+    font-size: 25px;
+    line-height: 1.8;
+    transition: all 0.5s ease-in-out;
+}
+
+#sobre-textos p:hover{
+    color: var(--color-primary);
+    cursor: pointer;
+    transition: color 0.5s ease-in-out;
+    transform: scale(1.05);
+    text-shadow: 0 0 10px var(--color-primary);
+}
+
+#sobre-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+#sobre-tags span{
+    padding: 10px 18px;
+    border: 1px solid var(--color-primary);
+    border-radius: 999px;
+    color: var(--color-primary);
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+#sobre-tags span:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 10px rgba(255, 187, 85, 0.3);
+
+    background: rgba(255, 187, 85, 0.1);
+    cursor: pointer;
 }
